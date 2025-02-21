@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Hotel Registration</h2>
+        <form action="RegisterServlet" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="roomType">Room Type</label>
+            <select id="roomType" name="roomType">
+                <option value="Single">Single</option>
+                <option value="Double">Double</option>
+                <option value="Suite">Suite</option>
+            </select>
+
+            <label for="checkin">Check-in Date</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Check-out Date</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+</body>
+</html>
